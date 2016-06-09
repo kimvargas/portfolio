@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+    <h1>WILL CODE FOR COFFEE!</h1>
+    <p class="lead"><span style="color: rebeccapurple; font-size:1.2em; font-weight: 700;">Kim Vargas </span><span style="color: rebeccapurple;">is the zaniness you're looking to add to your team. </span>A quiet quick-study with a background in psychology, Kim will happily answer to pretty much any name that's shouted in her direction.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4" id="frick">
+        <h2>Efficiency!</h2>
+        <p>
+            See how this ONE WEIRD DATABASE revolutionized an inventory. What the secretaries do next will AMAZE you!
+        </p>
+        <p>@Html.ActionLink("Test Inventory ", "Index", "Projects", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Number Cruncher!</h2>
+        <p>A Cleveland cat-mom found a way to write ETR reports in HALF the time! School psychs HATE HER!</p>
+        <p>@Html.ActionLink("Excel Parser Utility ", "Index", "Projects", null, new {@class="btn btn-default"})</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Correlateable!</h2>
+        <p>Would you win these DRUNKEN ARGUMENTS?  TAKE THIS QUIZ to see how correlation does not equal causation!</p>
+        <p>@Html.ActionLink("funStudies", "Index", "Projects", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>

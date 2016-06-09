@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Portfolio.Models.Project>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectScreenshot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectGitHub)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <h3>@Html.DisplayFor(modelItem => item.ProjectName)</h3>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProjectDescription)
+                </td>
+                <td>
+                    <img src="@Html.DisplayFor(modelItem => item.ProjectScreenshot)" />
+                </td>
+                <td>
+                    <a href=@Html.DisplayFor(modelItem => item.ProjectGitHub)>GitHub Repository</a>
+                </td>
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new { id = item.ProjectId }, new { @class = "btn btn-default" })
+                    <br />*@
+                    @Html.ActionLink("Details", "Details", new { id = item.ProjectId }, new { @class = "btn btn-primary" }) <br />
+                    @*@Html.ActionLink("Delete", "Delete", new { id = item.ProjectId }, new { @class = "btn btn-warning" })*@
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <p>
+        @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-default" })
+    </p>
+</div>

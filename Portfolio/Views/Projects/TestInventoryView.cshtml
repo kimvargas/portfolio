@@ -1,0 +1,52 @@
+﻿@model Portfolio.Models.Project
+
+@{
+    ViewBag.Title = "TestInventoryView";
+}
+
+<h2>TestInventoryView</h2>
+
+@*BLoody ace figure out what you were trying to do here*@
+
+<div>
+    <h4>Project</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectScreenshot)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectScreenshot)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectGitHub)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectGitHub)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProjectId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

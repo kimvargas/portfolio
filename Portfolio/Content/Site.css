@@ -1,0 +1,86 @@
+﻿body {
+    padding-top: 2px;
+    padding-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #510303;
+    background-color: #82aab1;
+    background-image: url(http://images.fineartamerica.com/images-medium-large-5/computer-cat-andee-photography.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/*--------Custom CSS--------*/
+.logo{
+    font-size: 4.5em;
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 10px 3px 20px;
+    color: #aa0000;
+    background-color: rgba(221,221,221,0.8);
+}
+
+.navbar{
+    background-color: #eaeaea;
+    font-family: 'Raleway', sans-serif;
+    /*color: #000033;*/ 
+    outline-color: #eaeaea;
+    font-weight: 600;
+}
+
+
+.jumbotron {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(221,221,221,0.8);
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    color: rebeccapurple;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #6f3333;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #505050;
+}
+
+.row {
+    background-color: rgba(221,221,221,0.8);
+
+    font-weight: 700;
+}
+
+img {
+    max-height: 150px;
+}
